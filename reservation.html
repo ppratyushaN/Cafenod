@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Reservation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style>
+    #div1 {
+      width: 1000px;
+      height: 700px;
+      margin: auto;
+      margin-top: 50px;
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      Reservation Form</div>
+
+
+
+    <form class="form" action="register" action="connect.php" method="post">
+      <table class="table table-hover table-striped">
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">
+            <h4>Email address:</h4>
+          </label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+            name="Email">
+        </div>
+        <h4>NAME:</h4>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="Last name">
+          </div>
+        </div>&nbsp;
+        <label for="inputPassword5" class="form-label">
+          <h4>PHONE.NO.:</h4>
+        </label>
+        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"
+          name="Ph.No.">
+        <div id="passwordHelpBlock" class="form-text">
+          Your number must be 10 digits long, contain numbers, and must not contain spaces, special characters, or
+          emoji.
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">
+            <h4>LOCATION:</h4>
+          </label>
+          <select id="inputState" class="form-select">
+            <option selected name="Location" value="Bhubaneswar">Bhubaneswar</option>
+            <option selected name="Location" value="Cuttack">Cuttack</option>
+            <option selected name="Location" value="Rourkela">Rourkela</option>
+            <option selected name="Location" value="Baleswar">Baleswar</option>
+            <option selected name="Location" value="Bhadrak">Bhadrak</option>
+            <option>...</option>
+          </select>
+        </div>
+        <h4>NO. OF GUESTS:</h4>
+        <select class="form-select" aria-label="Default select example" name="No. of guests">
+          <option selected>Open this select menu</option>
+          <option value="1" value="one">One</option>
+          <option value="2" value="two">Two</option>
+          <option value="3" value="three">Three</option>
+          <option value="4" value="four">Four</option>
+          <option value="5" value="five">Five</option>
+          <option value="6" value="six">Six</option>
+          <option value="7" value="seven">Seven</option>
+          <option value="8" value="eight">Eight</option>
+          <option value="10" value="ten">Ten</option>
+        </select>
+        <h4>WHAT TIME OF DAY WOULD YOU LIKE TO BOOK?</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked
+            name="Time">
+          <label class="form-check-label" for="exampleRadios1" vaqlue="morning">
+            Morning
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2" value="afternoon">
+            Afternoon
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2" value="evening">
+            Evening
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2" value="night">
+            Night
+          </label>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label" name="notes">
+            <h4>SPECIAL NOTES:</h4>
+          </label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Agree to terms and conditions</p>
+        </div>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-danger me-md-2 btn-lg" type="button">reset</button>
+          <button class="btn btn-primary btn-lg" type="button">submit</button>
+        </div>
+      </table>
+    </form>
+  </div>
+</body>
+
+</html>
